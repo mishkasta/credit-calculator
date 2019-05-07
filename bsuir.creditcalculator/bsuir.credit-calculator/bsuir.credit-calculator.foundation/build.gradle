@@ -14,8 +14,8 @@ repositories {
 dependencies {
     compile group: 'javax.mail', name: 'mail', version: '1.4.1'
     
-    compile project(':bsuir.credit-calculator/bsuir.credit-calculator.domain-model')
-    compile project(':bsuir.credit-calculator/bsuir.credit-calculator.repositories')
+    compile project(':bsuir.credit-calculator.domain-model')
+    compile project(':bsuir.credit-calculator.repositories')
     
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

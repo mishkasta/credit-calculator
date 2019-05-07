@@ -4,11 +4,16 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'bsuir.credit-calculator/bsuir.credit-calculator.mvc'
+include 'bsuir.common'
+include 'bsuir.credit-calculator.foundation'
+include 'bsuir.credit-calculator.web'
+include 'bsuir.credit-calculator.domain-model'
+include 'bsuir.credit-calculator.repositories'
 
-include 'bsuir/bsuir.common'
-include 'bsuir.credit-calculator/bsuir.credit-calculator.foundation'
-include 'bsuir.credit-calculator/bsuir.credit-calculator.web'
-include 'bsuir.credit-calculator/bsuir.credit-calculator.domain-model'
-include 'bsuir.credit-calculator/bsuir.credit-calculator.repositories'
+project(':bsuir.common').projectDir = file('bsuir/bsuir.common')
+project(':bsuir.credit-calculator.foundation').projectDir = file('bsuir.credit-calculator/bsuir.credit-calculator.foundation')
+project(':bsuir.credit-calculator.web').projectDir = file('bsuir.credit-calculator/bsuir.credit-calculator.web')
+project(':bsuir.credit-calculator.domain-model').projectDir = file('bsuir.credit-calculator/bsuir.credit-calculator.domain-model')
+project(':bsuir.credit-calculator.repositories').projectDir = file('bsuir.credit-calculator/bsuir.credit-calculator.repositories')
 
+rootProject.name = 'bsuir.credit-calculator.web'

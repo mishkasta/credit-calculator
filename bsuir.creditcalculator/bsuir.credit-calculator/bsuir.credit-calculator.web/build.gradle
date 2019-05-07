@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    compile project(':bsuir.credit-calculator/bsuir.credit-calculator.foundation')
+    compile project(':bsuir.credit-calculator.foundation')
 
     compile group: 'org.springframework', name: 'spring-context', version: '4.1.3.RELEASE'
     compile group: 'org.springframework', name: 'spring-webmvc', version: '5.1.5.RELEASE'

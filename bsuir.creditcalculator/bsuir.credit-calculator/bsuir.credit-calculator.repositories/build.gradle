@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    compile project(':bsuir/bsuir.common')
-    compile project(':bsuir.credit-calculator/bsuir.credit-calculator.domain-model')
+    compile project(':bsuir.common')
+    compile project(':bsuir.credit-calculator.domain-model')
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
