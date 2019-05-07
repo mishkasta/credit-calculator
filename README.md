@@ -8,6 +8,7 @@ Default servlet name is "credits".
 
 ## Requirements
 Node.js should be installed to be able to build the frontend.
+Gradle should be installed to build a WAR
 
 ## Prepare WAR artifact
 
@@ -29,7 +30,7 @@ To get the ready for deploy on the Tomcat server WAR artifact, you should comple
 4. Go to the *bsuir.creditcalculator* folder and build the WAR:
     ```
     cd bsuir.creditcalculator
-    gradlew war
+    gradle war
     ```
     The WAR artifact will be generated at the *bsuir.creditcalculator/bsuir.credit-calculator/bsuir.credit-calculator.web/build/libs/bsuir.credit-calculator*
 5. Rename the artifact to name you specified when configured frontend.
