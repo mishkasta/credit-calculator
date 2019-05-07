@@ -1,0 +1,56 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+div[id^='root'] {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    height: 100%;
+}
+
+html {
+    min-height: 100%;
+    height: 100%;
+
+    overflow-y: hidden;
+}
+
+:disabled {
+    cursor: default !important;
+}
+
+.page {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+    align-content: center;
+}
+
+.notifications-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.main {
+    display: flex;
+
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}

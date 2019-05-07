@@ -1,0 +1,14 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'bsuir.credit-calculator/bsuir.credit-calculator.mvc'
+
+include 'bsuir/bsuir.common'
+include 'bsuir.credit-calculator/bsuir.credit-calculator.foundation'
+include 'bsuir.credit-calculator/bsuir.credit-calculator.web'
+include 'bsuir.credit-calculator/bsuir.credit-calculator.domain-model'
+include 'bsuir.credit-calculator/bsuir.credit-calculator.repositories'
+

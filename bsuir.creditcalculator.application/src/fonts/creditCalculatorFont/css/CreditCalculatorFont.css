@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'CreditCalculatorFont';
+    src:  url('../fonts/CreditCalculatorFont.eot?h1xcrz');
+    src:  url('../fonts/CreditCalculatorFont.eot?h1xcrz#iefix') format('embedded-opentype'),
+    url('../fonts/CreditCalculatorFont.ttf?h1xcrz') format('truetype'),
+    url('../fonts/CreditCalculatorFont.woff?h1xcrz') format('woff'),
+    url('../fonts/CreditCalculatorFont.svg?h1xcrz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'CreditCalculatorFont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-delete:before{
+    content:'\0041';
+}
+.icon-edit:before{
+    content:'\0042';
+}
+.icon-fast-backward-arrows-button:before{
+    content:'\0043';
+}
+.icon-step-backward:before{
+    content:'\0045';
+}
+.icon-step-forward:before{
+    content:'\0046';
+}
+.icon-fast-forward-arrows:before{
+    content:'\0047';
+}
+.icon-sort-arrows-couple-pointing-up-and-down:before{
+    content:'\0048';
+}
+.icon-cancel:before {
+    content: "\49";
+}
+

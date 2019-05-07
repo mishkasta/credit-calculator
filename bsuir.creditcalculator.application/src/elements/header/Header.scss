@@ -1,0 +1,33 @@
+@import '../../themes/colors.scss';
+
+$header__item-margin-top: 15px;
+$header__item-margin-right: 15px;
+$header__item-margin-bottom: 15px;
+$header__item-margin-left: 15px;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $blue-color;
+    box-shadow: 0 0 10px $blue2-color;
+
+    background-color: $blue-color;
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        margin: $header__item-margin-top $header__item-margin-right
+            $header__item-margin-bottom $header__item-margin-left;
+
+        &-divider {
+            width: 5px;
+        }
+    }
+}
+
+.loading-indicator {
+    &_hidden {
+        visibility: hidden;
+    }
+}

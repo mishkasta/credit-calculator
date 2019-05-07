@@ -1,0 +1,2 @@
+# Bsuir.CreditCalculator.Application
+

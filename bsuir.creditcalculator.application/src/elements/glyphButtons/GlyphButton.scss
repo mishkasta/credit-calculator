@@ -1,0 +1,13 @@
+.glyph-button {
+    border: 0px;
+
+    background-color: transparent;
+
+    &:hover {
+        color: #a8a4a4; 
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

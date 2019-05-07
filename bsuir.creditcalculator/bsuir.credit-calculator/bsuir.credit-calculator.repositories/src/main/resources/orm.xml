@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd"
+                 version="1.0">
+    <package>by.bsuir.CreditCalculator.DomainModel</package>
+    <entity class="Role">
+        <table name="Roles" />
+        <attributes>
+            <id name="id">
+                <column name="Id" />
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="name">
+                <column name="Name"/>
+            </basic>
+            <many-to-many name="users" fetch="EAGER">
+                <join-table name="UsersRoles">
+                    <join-column name="RoleId" />
+                    <inverse-join-column name="UserId" />
+                </join-table>
+            </many-to-many>
+        </attributes>
+    </entity>
+    <entity class="Credit">
+        <table name="Credits" />
+        <attributes>
+            <id name="id">
+                <column name="Id" />
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="name">
+                <column name="Name" />
+            </basic>
+            <basic name="desiredSum">
+                <column name="DesiredSum" />
+            </basic>
+            <basic name="monthsCount">
+                <column name="MonthsCount" />
+            </basic>
+            <basic name="interestRate">
+                <column name="InterestRate" />
+            </basic>
+            <basic name="monthlyCharge">
+                <column name="MonthlyCharge" />
+            </basic>
+            <basic name="totalSum">
+                <column name="TotalSum" />
+            </basic>
+            <basic name="createdDate">
+                <column name="CreatedDate" />
+            </basic>
+            <many-to-one name="user" fetch="EAGER">
+                <join-column name="UserId" />
+            </many-to-one>
+        </attributes>
+    </entity>
+    <entity class="RefreshToken">
+        <table name="RefreshTokens" />
+        <attributes>
+            <id name="id">
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="value">
+                <column name="Value" />
+            </basic>
+            <basic name="expirationDate">
+                <column name="ExpirationDate" />
+            </basic>
+            <many-to-one name="user" fetch="EAGER">
+                <join-column name="UserId" />
+            </many-to-one>
+        </attributes>
+    </entity>
+    <entity class="User">
+        <table name="Users" />
+        <attributes>
+            <id name="id">
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="username">
+                <column name="Username" />
+            </basic>
+            <basic name="password">
+                <column name="Password" />
+            </basic>
+            <basic name="email">
+                <column name="Email" />
+            </basic>
+            <basic name="createDate">
+                <column name="CreateDate" />
+            </basic>
+            <one-to-many name="credits" target-entity="Credit" />
+            <one-to-many name="refreshTokens" target-entity="RefreshToken" />
+            <many-to-many name="roles" fetch="EAGER">
+                <join-table name="UsersRoles">
+                    <join-column name="UserId" />
+                    <inverse-join-column name="RoleId" />
+                </join-table>
+            </many-to-many>
+        </attributes>
+    </entity>
+</entity-mappings>

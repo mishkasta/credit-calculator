@@ -1,0 +1,52 @@
+@import "../../themes/colors.scss";
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 7px;
+  font-size: 12px;
+  color: $transparent-black2-color;
+  width: 50%;
+
+  pointer-events: all;
+
+  &:hover {
+    color: $transparent-black3-color;
+  }
+
+  &__text {
+    margin: 5px 0px 5px 10px;
+  }
+
+  &__button {
+    border: 0px;
+    background-color: transparent;
+    align-items: center;
+
+    margin: 4px 0px 0px 0px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-warning {
+    background-color: $yellow-color;
+    border: 1px solid $yellow2-color;
+
+    &:hover {
+      background-color: $yellow2-color;
+    }
+  }
+
+  &-error {
+    background-color: $red-color;
+    border: 1px solid $red2-color;
+
+    &:hover {
+      background-color: $red2-color;
+    }
+  }
+}

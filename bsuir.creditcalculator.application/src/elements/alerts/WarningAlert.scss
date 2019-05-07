@@ -1,0 +1,21 @@
+@import '../../themes/colors.scss';
+
+.alert-warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    min-width: 100px;
+    padding: 5px 5px 5px 5px;
+
+    background-color: $yellow-color;
+
+    &:hover {
+        box-shadow: 0px 0px 5px $orange-color;
+        border: 1px solid $orange-color;
+    }
+
+    &:focus {
+        background-color: $yellow-color;
+    }
+}

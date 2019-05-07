@@ -1,0 +1,54 @@
+@import './colors.scss';
+
+.common-form {
+  border-radius: 10px;
+  background-color: $blue-color;
+  min-width: 400px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid $blue2-color;
+  box-shadow: 0 0 10px $blue2-color;
+
+  &__caption {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__input-feedback {
+    &_error {
+      text-align: end;
+      color: $red2-color;
+      margin: 0 0 -17px 0;
+    }
+  }
+
+  &__content {
+    padding: 15px 10px 15px 10px;
+    margin: 0 0 20px 0 !important;
+    border-top: 1px solid $blue2-color;
+    border-bottom: 1px solid $blue2-color;
+    text-align: center;
+
+    &-inputs {
+      text-align: start;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    &-centered {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__button-divider {
+    width: 10px;
+  }
+}

@@ -1,0 +1,9 @@
+.ads {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    &-container {
+        margin: 0 10px 0 10px;
+    }
+}
