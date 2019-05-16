@@ -6,6 +6,9 @@ This is a repo for Credits Calculator Test App deployment
 ## Defaults
 Default servlet name is "credits".
 
+## Database seeds
+It's required to seed inta database two Role entities with Name *"Admin"* and *"User"*.
+
 ## Requirements
 Node.js should be installed to be able to build the frontend.
 Gradle should be installed to build a WAR

@@ -7,6 +7,9 @@ create table Roles
         unique (Name)
 );
 
+insert into Roles (Name) values ('Admin');
+insert into Roles (Name) values ('User');
+
 create table Users
 (
     Id         int auto_increment
